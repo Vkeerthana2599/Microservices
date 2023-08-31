@@ -32,6 +32,7 @@ public class OrderService {
 	
 	public void saveOrderDetails(OrderDto orderDto) {
 		LOGGER.info("inside saveOrderdetails () of OrderService orderDto {}:"+orderDto);
+		LOGGER.info("SAVING THE ORDER DETAILS INFORMATION");
 		Random random =new Random();
 		
 		long num=random.nextLong(1000);
