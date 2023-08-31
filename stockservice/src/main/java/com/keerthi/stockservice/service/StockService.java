@@ -24,7 +24,7 @@ public class StockService {
 		
 		LOGGER.info("information");
 		stockRepository.save(stock);
-		System.out.println("this is stock service");
+		System.out.println("this is stock service.....");
 	}
 	
 	public Optional<Stock> findStockNumberByStockId(Long id) {
