@@ -1,0 +1,22 @@
+package com.keerthi.orderservice.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.keerthi.orderservice.appconstant.AppConstant;
+import com.keerthi.orderservice.dto.OrderDto;
+import com.keerthi.orderservice.service.OrderService;
+
+@RestController
+@RequestMapping(value=AppConstant.FORWARD_SLASH)
+public class OrderController {
+	
+	@Autowired
+	private OrderService orderService;
+	
+	public void placeOrder(@RequestBody OrderDto orderDto) {
+		orderService.placeOrder(orderDto);
+	}
+
+}
