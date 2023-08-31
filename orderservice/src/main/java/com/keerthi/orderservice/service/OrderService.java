@@ -42,6 +42,7 @@ public class OrderService {
 	}
 
 	public String placeOrder(@RequestBody OrderDto dto) {
+		LOGGER.info("Placeorder Request is genetrated");
 		EmailDto emailDto = new EmailDto();
 		emailDto.setSubject("inivitaion");
 		emailDto.setMailBodyContext("baby Shower");
