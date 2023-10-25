@@ -13,6 +13,6 @@ public class EmailDto implements Serializable{
 	
 	private String subject;
 	
-	private String mailBodyContext;
+	private String emailBodyContext;
 
 }

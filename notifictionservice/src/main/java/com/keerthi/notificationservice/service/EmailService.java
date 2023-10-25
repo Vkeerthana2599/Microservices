@@ -44,7 +44,7 @@ public class EmailService
 			mailMessage.setFrom(dto.getSendMailId());
 			mailMessage.setTo(dto.getReceiptMailId());
 			mailMessage.setText(dto.getSubject());
-			mailMessage.setSubject(dto.getMailBodyContext());
+			mailMessage.setSubject(dto.getEmailBodyContext());
 			
 			javaMailSender.send(mailMessage);
 			return true;
