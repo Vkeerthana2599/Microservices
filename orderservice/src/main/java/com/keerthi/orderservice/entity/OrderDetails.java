@@ -27,12 +27,6 @@ public class OrderDetails implements Serializable {
 	@Column(name="id")
 	private Long id;
 	
-	@Column(name="order_number1")
-	private Long orderNumber1;
-	
-	@Column(name="order_number2")
-	private Long orderNumber22;
-	
 	@Column(name="order_number")
 	private Long orderNumber;
 	
