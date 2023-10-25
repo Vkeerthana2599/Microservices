@@ -31,7 +31,7 @@ public class OrderDetails implements Serializable {
 	private Long orderNumber1;
 	
 	@Column(name="order_number2")
-	private Long orderNumber2;
+	private Long orderNumber22;
 	
 	@Column(name="order_number")
 	private Long orderNumber;
