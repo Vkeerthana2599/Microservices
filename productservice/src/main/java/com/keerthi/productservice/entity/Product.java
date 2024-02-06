@@ -28,9 +28,6 @@ public class Product implements Serializable {
 	@Column(name = "name")
 	private String name;
 	
-	@Column(name = "name1")
-	private String name1;
-	
 	@Column(name = "description")
 	private String description;
 	
